@@ -1,6 +1,6 @@
 # MealApp
 
-A new Flutter project.
+#### MealApp project used to learn Dart/Flutter.
 
 ## Getting Started
 
