@@ -1,4 +1,8 @@
 import 'dart:ui';
+import 'screens/filters_screen.dart';
+
+import './screens/tabs_screen.dart';
+
 import './screens/category_meals_screen.dart';
 import './screens/meal_details_screen.dart';
 import 'screens/category_meals_screen.dart';
@@ -32,9 +36,10 @@ class MyApp extends StatelessWidget {
       ),
       // home: CategoriesScreen(),
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailsScreen.routeName: (ctx) => MealDetailsScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
